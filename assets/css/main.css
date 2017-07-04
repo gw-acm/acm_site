@@ -133,12 +133,12 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/LearntoCode1.jpg) no-repeat center top;
+	background: url(../img/GameNight2.jpg) no-repeat center center;
 	margin-top: -10px;
 	padding-top:20px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: center top;
 	min-height: 500px;
 	width: 100%;
 
@@ -155,9 +155,9 @@ a:after {
 
 #headerwrap h1 {
 	margin-top: 100px;
-	color: white;
+	color: #004065;
 	font-size: 70px;
-	font-weight: 300;
+	font-weight: bold;
 	letter-spacing: 3px;
 }
 
