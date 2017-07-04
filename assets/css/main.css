@@ -46,7 +46,7 @@ p {
 
 /* Links */
 a {
-    color: #0182ac;
+    color: #09357a;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -58,7 +58,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #83cee2;
     text-decoration: none;
     outline: 0;
 }
@@ -157,7 +157,7 @@ a:after {
 	margin-top: 100px;
 	color:  #0182ac;
 	font-size: 70px;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 3px;
 }
 
@@ -194,7 +194,7 @@ a:after {
 }
 
 
-/* Red Wrap */
+/* ACM BLUE  Wrap */
 #r {
 	background: #0182ac;
 	padding-top: 35px;
@@ -243,7 +243,7 @@ a:after {
 }
 
 #f i:hover {
-	color: #0182ac;
+	color: #83cee2;
 }
 
 /****** SECTIONS *****/
