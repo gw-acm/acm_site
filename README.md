@@ -1,7 +1,7 @@
 # acm_site
 GW ACM's website development repo.
 
-#Website TODO:
+*Website TODO:*
 1. better events feature--quick updates, synced with rest of social media somehow
 2. galleries of photos from specific events
 3. individual workshop page(s)
