@@ -43,7 +43,18 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true"
+                aria-expanded="false">
+                ABOUT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+              	<li><a href="about.html">About GW ACM</a></li>
+                <li><a href="eboard.html">Executive Board</a></li>
+              </ul>
+            </li>
             <li><a href="events.html">EVENTS</a></li>
             <li class="active"><a href="proftalks.html">PROFESSOR TALKS</a></li>
             <li><a href="calendar.html">CALENDAR</a></li>
@@ -54,8 +65,8 @@
                 RESOURCES
                 <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu">
-                <li><a href="ws/git-linux-17/index.html">Git + Linux Workshop</a></li>
+            <ul class="dropdown-menu">
+                <li><a href="git_linux_ws.html">Git + Linux Workshop</a></li>
                 <li><a href="cs_resources.html">CS</a></li>
                 <li><a href="interview_resources.html">Interviews</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -72,7 +83,7 @@
 		  <div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
 				<h1>ACM Professor Talks</h1>
-        <h4>An event where professors share their research and interests outside of the classroom</h4>
+        <h4>An engaging event where professors share their research and interests outside of the classroom</h4>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
@@ -80,75 +91,302 @@
 
   <div class="container">
     <div class="row centered">
-      <h2><u>Archives</u></h2>
+      <h2><u>Past Talks</u></h2>
       <div id="prof-talks">
+        <br />
         <div class="row">
+         <div class="col-md-3">
+          <a data-toggle="modal" data-target="#nov2017">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>November 2017:<br />Prof. David James</strong></div>
+              <div class="panel-body">Making Music with Python</div>
+            </div>
+          </a>
+          </div>
           <div class="col-md-3">
-            <a data-toggle="modal" data-toggle="modal" data-target="#myModal">
+           <a data-toggle="modal" data-target="#oct2017">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>October 2017:<br />Prof. Robert Pless</strong></div>
+              <div class="panel-body">TraffickCam</div>
+            </div>
+           </a>
+          </div>
+          <div class="col-md-3">
+            <a data-toggle="modal" data-target="#may2017">
               <div class="panel panel-default">
-                <div class="panel-heading"><strong>Sample Prof Talk</strong></div>
-                <div class="panel-body">Testing testing</div>
+                <div class="panel-heading"><strong>May 2017:<br />Prof. Abdou Youssef</strong></div>
+                <div class="panel-body">Frontiers of Math Language Processing and Its Applications</div>
               </div>
             </a>
           </div>
-          <div class="col-md-3">
-            <div class="panel panel-default">
-              <div class="panel-body">Testing testing</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="panel panel-default">
-              <div class="panel-body">Testing testing</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="panel panel-default">
-              <div class="panel-body">Testing testing</div>
-            </div>
-          </div>
-
-          <div id="myModal" class="modal fade" role="dialog">
+        </div><!-- row -->
+        
+        <div id="nov2017" class="modal fade" role="dialog">
             <div class="modal-dialog">
-
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
+                  <h4 class="modal-title">November 2017: Prof. David James<br /></h4>
+                  <h3>Making Music with Python</h3>
                 </div>
                 <div class="modal-body">
-                  <p>Testing testing does this work?</p>
+                  <p>Using the JythonMusic environment for music making and creative programming</p>
+                  <img src="assets/img/proftalks/james_nov17.png" width="80%" height="80%" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <h3>April 2015: Professor Aaron Cohen</h3>
-      <strong>SDR digital radio and relay models and the design and operation of the "Surrogate TACSAT"</strong>
-      <p>The Marine Corps has frequent requirements for beyond-line-of-sight communications <br />
-         for voice and narrowband data in challenging terrains that normally limit or truncate links.<br />
-         The NRL has developed VHF analog and software defined radio (SDR) relays that support narrowband <br />
-         communications using standard Marine Corps radios and has developed SDR radio models for the Marine Corps <br />
-         radios. The relay requirements are lightweight and designed to be borne aloft at altitudes above 65,000 ft., <br />
-         providing connectivity to nodes as far as 150 nmi from the relay payload. This presentation documents the <br />
-         design of SDR digital radio and relay models and the design and the operation of the balloon-borne  <br />
-         Arduino Mega2560 configured VHF analog relay, dubbed "Surrogate TACSAT", and details the analog relay's <br />
-         results from testing conducted out of Yuma Proving Ground in March of 2014.
-      </p>
+          <div id="oct2017" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">October 2017: Prof. Robert Pless<br /></h4>
+                  <h3>TraffickCam</h3>
+                </div>
+                <div class="modal-body">
+                  <p>TraffickCam is an app that uses crowdsourced snapshots of hotel rooms to help law enforcement locate victims and prosecute sex traffickers.
+                  The app employs image analysis tools to identify hotel rooms used for suspected sex trafficking</p>
+                  <img src="assets/img/proftalks/pless_oct17.jpg" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+         <div id="may2017" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">May 2017: Prof. Abdou Youssef<br /></h4>
+                  <h3>Frontiers of Math Language Processing and Its Applications</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Learn about Mathematical Language Processing (MLP) and how it can help scientists decode
+                  the meaning of undefined identifiers in mathematical formulae without studying the context</p>
+                <img src="assets/img/proftalks/youssef_may17.jpg" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="row">
+          <div class="col-md-3">
+           <a data-toggle="modal" data-target="#mar2017">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>March 2017:<br />Prof. Claire Monteleoni</strong></div>
+              <div class="panel-body">A Taste of Machine Learning with Applications to Climate Science and Finance</div>
+            </div>
+           </a>
+          </div>
+          <div class="col-md-3">
+           <a data-toggle="modal" data-target="#feb2017">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>February 2017:<br />Prof. Robert Pless</strong></div>
+              <div class="panel-body">Glitter and Geometry</div>
+            </div>
+           </a>
+          </div>
+         <div class="col-md-3">
+           <a data-toggle="modal" data-target="#oct2016">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>October 2016:<br />Prof. Tim Wood</strong></div>
+              <div class="panel-body">Networking: What's between you and that cat video?</div>
+            </div>
+           </a>
+          </div>
+        <div class="col-md-3">
+           <a data-toggle="modal" data-target="#mar2016">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>March 2016:<br />Prof. Gabe Parmer</strong></div>
+              <div class="panel-body">Enter Skynet: How the Machines Will Rise Up</div>
+            </div>
+           </a>
+          </div>
+        </div><!-- row -->
 
-      <!-- Duplicate the following block for each archive entry -->
-      <h3>March 2015: Professor Gabe Parmer</h3>
-      <strong>Abstract: Enter Skynet: How the Machines Will Rise Up</strong>
-      <p>Embedded systems and the Internet of Things (IoT) are a Big Deal.<br />
-         They lurk in the world all around us, monitoring, collecting, and controlling.<br />
-         They stay hidden, waiting for the perfect time to STRIKE.  What does a <br />
-         world look like that is increasingly integrated with technology, and what <br />
-         does it mean for computer scientists?  In this talk, I'll discuss what <br />
-         embedded systems are, how they've evolved in their newest incarnation in IoT.<br />
-         Understanding this, we'll discuss their implications on privacy, human safety,<br />
-         and on programmers.  Come willing to discuss, and welcome our future machine overlords.</p>
-      <p><a href="http://www.youtube.com/watch?v=QUvGEQEJR8c">Watch on YouTube</a><br >
-      <a href="https://www.facebook.com/events/992259074200958/">Facebook Event</a></p>
+          <div id="mar2017" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">March 2017: Prof. Claire Monteleoni<br /></h4>
+                  <h3>A Taste of Machine Learning with Applications to Climate Science and Finance</h3>
+                </div>
+                <div class="modal-body">
+                  <p>How does machine learning play a role in climate science and finance?</p>
+                  <img src="assets/img/proftalks/monteleoni_mar17.png" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="feb2017" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">February 2017: Prof. Robert Pless<br /></h4>
+                  <h3>Glitter and Geometry</h3>
+                </div>
+                <div class="modal-body">
+                  <p>SparkleGeometry: Glitter Imaging for 3D Point Tracking.
+                  Proposing an easy to construct physical prototype that estimates the 3D position of a moving point light source 
+                  by viewing the changing sparkle patterns visible on a glitter sheet</p>
+                  <img src="assets/img/proftalks/pless_feb17.png" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="oct2016" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">October 2016: Prof. Tim Wood<br /></h4>
+                  <h3>Networking: What's between you and that cat video?</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Foundations of networking</p>
+                  <img src="assets/img/proftalks/wood_oct16.jpg" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+        </div>
+         <div id="mar2016" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">March 2016: Prof. Gabe Parmer<br /></h4>
+                  <h3>Enter Skynet: How the Machines Will Rise Up</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Embedded systems and the Internet of Things (IoT) are a Big Deal.
+                  They lurk in the world all around us, monitoring, collecting, and controlling.
+                  They stay hidden, waiting for the perfect time to STRIKE. What does a 
+                  world look like that is increasingly integrated with technology, and what 
+                  does it mean for computer scientists? In this talk, I'll discuss what 
+                  embedded systems are, how they've evolved in their newest incarnation in IoT.
+                  Understanding this, we'll discuss their implications on privacy, human safety,
+                  and on programmers. Come willing to discuss, and welcome our future machine overlords.</p>
+                  <img src="assets/img/proftalks/parmer_mar16.jpg" width="80%" height="80%" />
+                  <p><a href="http://www.youtube.com/watch?v=QUvGEQEJR8c">Watch on YouTube</a><br >
+      			  <a href="https://www.facebook.com/events/992259074200958/">Facebook Event</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    	<div class="row">
+        <div class="col-md-3">
+           <a data-toggle="modal" data-target="#nov2015">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>November 2015:<br />Prof. Tim Wood</strong></div>
+              <div class="panel-body">Big Data and Clouds: What's all the buzz?</div>
+            </div>
+           </a>
+          </div>
+         <div class="col-md-3">
+          <a data-toggle="modal" data-target="#apr2015">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>April 2015:<br />Prof. Aaron Cohen</strong></div>
+              <div class="panel-body">SDR Digital Radio & Relay Models and the Design & Operation of the "Surrogate TACSAT"</div>
+            </div>
+          </a>
+          </div>
+    	  <div class="col-md-3">
+           <a data-toggle="modal" data-target="#mar2015">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>March 2015:<br />Prof. Rahul Simha</strong></div>
+              <div class="panel-body">Artificial Intelligence and Chess</div>
+            </div>
+           </a>
+          </div>
+          <div class="col-md-3">
+           <a data-toggle="modal" data-target="#feb2015">
+            <div class="panel panel-default">
+              <div class="panel-heading"><strong>February 2015:<br />Prof. Poorvi Vora</strong></div>
+              <div class="panel-body">Demystifying the Shady Ethics of eBay Auctions</div>
+            </div>
+           </a>
+          </div>
+    	</div><!-- row -->
+    	
+    	<div id="nov2015" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">November 2015: Prof. Tim Wood<br /></h4>
+                  <h3>Big Data and Clouds: What's all the buzz?</h3>
+                </div>
+                <div class="modal-body">
+                  <p>This talk will look at two increasingly buzzwordy trends: Cloud Computing and Big Data. 
+                  We will discuss how these new computing paradigms evolved, and how they are changing the way we develop and run software. 
+                  We will have a hands-on session where we use the Hadoop Analytics platform and the Natural Language Toolkit 
+                  to predict who will win the next presidential election. 
+                  Bring your laptop!</p>
+                  <img src="assets/img/proftalks/wood_nov15.png" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+    	<div id="apr2015" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">April 2015: Prof. Aaron Cohen<br /></h4>
+                  <h3>SDR Digital Radio & Relay Models and the Design & Operation of the "Surrogate TACSAT"</h3>
+                </div>
+                <div class="modal-body">
+                  <p>The Marine Corps has frequent requirements for beyond-line-of-sight communications 
+                  for voice and narrowband data in challenging terrains that normally limit or truncate links.
+                  The NRL has developed VHF analog and software defined radio (SDR) relays that support narrowband 
+                  communications using standard Marine Corps radios and has developed SDR radio models for the Marine Corps 
+                  radios. The relay requirements are lightweight and designed to be borne aloft at altitudes above 65,000 ft., 
+                  providing connectivity to nodes as far as 150 nmi from the relay payload. This presentation documents the 
+                  design of SDR digital radio and relay models and the design and the operation of the balloon-borne 
+                  Arduino Mega2560 configured VHF analog relay, dubbed "Surrogate TACSAT", and details the analog relay's 
+                  results from testing conducted out of Yuma Proving Ground in March of 2014.</p>
+                  <img src="assets/img/proftalks/cohen_apr15.jpg" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+    	<div id="mar2015" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">March 2015: Prof. Rahul Simha<br /></h4>
+                  <h3>Artificial Intelligence and Chess</h3>
+                </div>
+                <div class="modal-body">
+                  <p>How computers win at chess and its implications for artificial intelligence.</p>
+                  <img src="assets/img/proftalks/simha_mar15.jpeg" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+    	<div id="feb2015" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">February 2015: Prof. Poorvi Vora<br /></h4>
+                  <h3>Demystifying the Shady Ethics of eBay Auctions</h3>
+                </div>
+                <div class="modal-body">
+                  <p>eBay auctions are designed to extract information from the buyer at the seller’s advantage. 
+                  Though eBay's second chance offer for expired auctions seems innocuous, 
+                  it is really about making more money for the seller.</p>
+                  <img src="assets/img/proftalks/vora_feb15.jpg" width="80%" height="80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      </div>
     </div>
   </div>
 
@@ -158,8 +396,9 @@
 			<div class="row centered">
 				<a href="https://www.facebook.com/groups/gw.acm/?fref=ts"><i class="fa fa-facebook"></i>
                 <a href="https://github.com/gw-acm"><i class="fa fa-github"></i>
-                <a href="https://orgsync.com/111888/chapter"><font color= FFFFFF>OrgSync</font></a>
-                <!--<a href="https://orgsync.com/111888/chapter"><a href="assets/img/buttons/orgsync.png" class="image fit thumb"><img src="assets/img/buttons/orgsync.png" alt="Orgsync button"/></a> -->
+            	<a href="https://orgsync.com/111888/chapter">
+            	<img src="assets/img/orgsync_logo_white.png" alt="OrgSync" style="width:86px;height:34px"/>
+            	</a>
             </div><!-- row -->
 		</div><!-- container -->
 	</div><!-- Footer -->
