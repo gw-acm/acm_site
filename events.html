@@ -278,7 +278,7 @@
     */
         const imageDiv = document.getElementById('events-image-carousel');
         const carouselIndicatorDiv = document.getElementById('carousel-indicator-wrapper');
-        fetch('http://acm.seas.gwu.edu/acm-events-images')
+        fetch('http://acm.seas.gwu.edu:8080/acm-events-images')
             .then(res => res.json())
             .then(res => {
                 let count = 0;
